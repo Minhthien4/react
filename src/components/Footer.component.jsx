@@ -3,7 +3,7 @@ import LogoFooter from "../assets/logo_footer.svg";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col" style={{ marginTop: '240px' }}>
+    <div className="flex flex-col bg-white" style={{ marginTop: '240px' }}>
       <div 
         className="bg-[#1A1446] text-white w-full flex flex-col" 
         style={{ height: '250px', padding: '2rem 5rem' }}
