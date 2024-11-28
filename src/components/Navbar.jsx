@@ -40,7 +40,7 @@ export const Navbar = () => {
   );
 
   return (
-    <Container className="sticky top-0 z-10 h-max max-w-full rounded-none  py-2" style={{background: "#FFD000", maxWidth: "-webkit-fill-available"}}>
+    <Container className="sticky top-0 z-10 h-max max-w-full rounded-none  py-2" style={{background: "white", maxWidth: "-webkit-fill-available"}}>
       <div className="flex items-center justify-between text-blue-gray-900 mt-4" style={{margin: "16px"}}>
         {/* Logo và Input */}
         <div className="flex items-center gap-6">
