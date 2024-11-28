@@ -20,7 +20,7 @@ export const Home = () => {
           src={ImageAbout}
           alt="ImageAbout"
           className="mt-10 w-full object-cover object-center"
-          height={360}
+          style={{height: "360px"}}
         />
         <div className="flex justify-between items-center">
           <img

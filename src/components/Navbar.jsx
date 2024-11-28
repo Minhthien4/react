@@ -9,6 +9,7 @@ import {
   Input,
 } from "@material-tailwind/react";
 import logoSvg from '../assets/logo.svg';
+import { Container } from '@mui/material';
 
 export const Navbar = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -39,8 +40,8 @@ export const Navbar = () => {
   );
 
   return (
-    <MaterialNavbar className="sticky top-0 z-10 h-max max-w-full rounded-none  py-2 " style={{background: "#FFD000"}}>
-      <div className="flex items-center justify-between text-blue-gray-900 mt-4">
+    <Container className="sticky top-0 z-10 h-max max-w-full rounded-none  py-2" style={{background: "#FFD000", maxWidth: "-webkit-fill-available"}}>
+      <div className="flex items-center justify-between text-blue-gray-900 mt-4" style={{margin: "16px"}}>
         {/* Logo và Input */}
         <div className="flex items-center gap-6">
           <Typography
@@ -51,17 +52,6 @@ export const Navbar = () => {
             <img src={logoSvg} alt="Liberty Mutual Logo" className="h-10" />
 
           </Typography>
-          {/* <Input
-            type="search"
-            placeholder="Search"
-            containerProps={{
-              className: "min-w-[288px]",
-            }}
-            className="!border-t-blue-gray-300 pl-9 placeholder:text-blue-gray-300 focus:!border-blue-gray-300"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          /> */}
         </div>
 
         {/* Navigation và Buttons */}
@@ -129,7 +119,7 @@ export const Navbar = () => {
           </Button>
         </div>
       </MobileNav>
-    </MaterialNavbar>
+    </Container>
 
   );
 };
